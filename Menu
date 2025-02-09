@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Romantic Soirée Menu</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #2b2b2b;
+      --background-color: #f4e3c1;
+      --accent-color: #8b0000;
+    }
+
+    body {
+      font-family: 'Times New Roman', Times, serif;
+      background-color: var(--background-color);
+      padding: 2rem;
+      min-height: 100vh;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    .swirl {
+      width: clamp(60px, 8vw, 80px);
+      position: absolute;
+      opacity: 0.8;
+    }
+
+    .swirl--top-left { transform: rotate(180deg); left: 1rem; top: 1rem; }
+    .swirl--top-right { transform: scaleX(-1) rotate(180deg); right: 1rem; top: 1rem; }
+    .swirl--bottom-left { transform: scaleX(-1); left: 1rem; bottom: 1rem; }
+    .swirl--bottom-right { right: 1rem; bottom: 1rem; }
+
+    .menu-container {
+      max-width: 800px;
+      margin: 0 auto;
+      position: relative;
+      padding: 2rem 0;
+    }
+
+    .menu-title {
+      font-family: 'Great Vibes', cursive;
+      font-size: clamp(2rem, 5vw, 3rem);
+      color: var(--accent-color);
+      margin: 2rem 0;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    }
+
+    .course-section {
+      margin: 3rem 0;
+    }
+
+    .course-title {
+      font-family: 'Great Vibes', cursive;
+      font-size: clamp(1.5rem, 3vw, 2rem);
+      color: var(--primary-color);
+      margin: 1.5rem 0;
+      position: relative;
+    }
+
+    .menu-item {
+      font-style: italic;
+      font-size: clamp(1rem, 2vw, 1.25rem);
+      color: var(--primary-color);
+      margin: 0.5rem 0;
+      transition: transform 0.3s ease;
+    }
+
+    .menu-item:hover {
+      transform: translateX(10px);
+    }
+
+    .divider {
+      width: clamp(100px, 20vw, 150px);
+      margin: 2rem auto;
+      opacity: 0.6;
+    }
+
+    @media (max-width: 768px) {
+      .swirl {
+        display: none;
+      }
+      body {
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <img class="swirl swirl--top-left" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Ornament-Swirl-Gold.svg/2048px-Ornament-Swirl-Gold.svg.png" alt="Decorative swirl">
+  <img class="swirl swirl--top-right" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Ornament-Swirl-Gold.svg/2048px-Ornament-Swirl-Gold.svg.png" alt="Decorative swirl">
+
+  <main class="menu-container">
+    <h1 class="menu-title">Chef Victor's 3-Course Romantic Menu</h1>
+
+    <section class="course-section">
+      <h2 class="course-title">Starter</h2>
+      <p class="menu-item">Creamy Lobster Bisque with Fresh Herb Croutons</p>
+    </section>
+
+    <img class="divider" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Ornament-Swirl-Gold.svg/2048px-Ornament-Swirl-Gold.svg.png" alt="Decorative divider">
+
+    <section class="course-section">
+      <h2 class="course-title">Main</h2>
+      <p class="menu-item">Pan-Seared Filet Mignon with Truffle Mashed Potatoes and Seasonal Vegetables</p>
+    </section>
+
+    <img class="divider" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Ornament-Swirl-Gold.svg/2048px-Ornament-Swirl-Gold.svg.png" alt="Decorative divider">
+
+    <section class="course-section">
+      <h2 class="course-title">Dessert</h2>
+      <p class="menu-item">Decadent Chocolate Fondant with Raspberry Coulis</p>
+    </section>
+  </main>
+
+  <img class="swirl swirl--bottom-left" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Ornament-Swirl-Gold.svg/2048px-Ornament-Swirl-Gold.svg.png" alt="Decorative swirl">
+  <img class="swirl swirl--bottom-right" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Ornament-Swirl-Gold.svg/2048px-Ornament-Swirl-Gold.svg.png" alt="Decorative swirl">
+</body>
+</html>
